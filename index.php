@@ -13,7 +13,6 @@ if(isset($_POST['generate'])){
     $pushData = $database->getReference($ref)->push($data);
     $_SESSION['code']=$code;
     $_SESSION['name']=$name;
-    echo $name.$code;
     header("Location:chat.php");
 }
 if(isset($_POST['submit'])){
