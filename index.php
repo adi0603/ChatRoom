@@ -1,5 +1,6 @@
 <?php
 include("includes/db.php");
+"redux": "^3.7.2",
 session_start();
 if(isset($_POST['generate'])){
     $name = $_POST['name'];
